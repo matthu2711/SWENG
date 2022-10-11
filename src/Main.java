@@ -15,6 +15,7 @@ public class Main {
 
         while(!quit){
             System.out.print("Enter equation to solve (or quit to close): ");
+            String request = input.next();
             if(request.equalsIgnoreCase("quit"))
                 quit = true;
             else {
