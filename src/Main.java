@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 public class Main {
 
-    static final List<Character> VALIDATOR = Arrays.asList('0', '1', '3', '4', '5', '6', '7', '8', '9',
+    static final List<Character> VALIDATOR = Arrays.asList('0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
             '+', '-', '*');
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -15,29 +15,36 @@ public class Main {
 
         while(!quit){
             System.out.print("Enter equation to solve (or quit to close): ");
-            String request = input.next();
+            String request = input.nextLine();
             if(request.equalsIgnoreCase("quit"))
                 quit = true;
             else {
+                request.strip();
                 for(int i = 0; i < request.length(); i++) {
-                    if (!VALIDATOR.contains(request.charAt(i))) {
-                        System.out.println("Please input a valid equation!");
-                        break;
-                    } else {
-                        if (request.charAt(i) == '+' || request.charAt(i) == '-'
-                                || request.charAt(i) == '*') {
-                            if (i == 0 || i == request.length() - 1) {
-                                System.out.println("Please input a valid equation!");
-                                break;
-                            }
+                    if(request.charAt(i) != ' ') {
+                       if (!VALIDATOR.contains(request.charAt(i)) && request.charAt(i) != ' ') {
+                            System.out.println("Please input a valid equation!");
+                            break;
+                       } else if (request.charAt(i) == '+' || request.charAt(i) == '-' || request.charAt(i) == '*') {
+                           if (i == 0 || i == request.length() - 1) {
+                               System.out.println("Please input a valid equation!");
+                               break;
+                           }
+                           if(sb.length() != 0)
                             equation.add(sb.toString());
-                            sb.setLength(0);
-                            equation.add(String.valueOf(request.charAt(i)));
-                        } else
-                            sb.append(request.charAt(i));
+                           equation.add(String.valueOf(request.charAt(i)));
+                           sb.setLength(0);
+                       } else {
+                           sb.append(request.charAt(i));
+                       }
+                    }
+                    else if(sb.length() != 0) {
+                        equation.add(sb.toString());
+                        sb.setLength(0);
                     }
                 }
-                equation.add(sb.toString());
+                if(sb.length() != 0)
+                    equation.add(sb.toString());
 
                 for (int j = 0; j < equation.size() - 1; j++) {
                     switch (equation.get(j)) {
