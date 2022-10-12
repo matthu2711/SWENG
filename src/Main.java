@@ -43,8 +43,10 @@ public class Main {
                         sb.setLength(0);
                     }
                 }
-                if(sb.length() != 0)
+                if(sb.length() != 0) {
                     equation.add(sb.toString());
+                    sb.setLength(0);
+                }
 
                 for (int j = 0; j < equation.size() - 1; j++) {
                     switch (equation.get(j)) {
@@ -54,6 +56,8 @@ public class Main {
                     }
                 }
                 System.out.printf("The answer is: %d \n", result);
+                equation.clear();
+                result = -1;
                 }
             }
         }
