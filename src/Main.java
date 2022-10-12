@@ -9,11 +9,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         boolean quit = false;
+        boolean valid;
         StringBuilder sb = new StringBuilder();
         List<String> equation = new ArrayList<>();
         int result = -1;
 
         while(!quit) {
+            valid = true;
             System.out.print("Enter equation to solve (or quit to close): ");
             String request = input.nextLine();
             if (request.equalsIgnoreCase("quit"))
@@ -24,10 +26,12 @@ public class Main {
                     char current = request.charAt(i);
                     if (!VALIDATOR.contains(current)) {
                         System.out.println("Please input a valid equation!");
+                        valid = false;
                         break;
                     } else if (current == '+' || current == '-' || current == '*' || current == ' ') {
-                        if (i == 0 || i == request.length() - 1) {
+                        if (i == 0 || i == request.length() - 1 && valid) {
                             System.out.println("Please input a valid equation!");
+                            valid = false;
                             break;
                         }
                         if (sb.length() != 0)
@@ -45,7 +49,7 @@ public class Main {
                 sb.setLength(0);
             }
 
-            if (equation.size() < 3){
+            if (equation.size() < 3 && valid){
                 System.out.println("Please input a valid equation!");
             }
             else {
@@ -65,7 +69,8 @@ public class Main {
                         case "-" -> result = (result == -1 ? (Integer.parseInt(equation.get(j - 1)) - Integer.parseInt(equation.get(j + 1))) : (result - Integer.parseInt(equation.get(j + 1))));
                     }
                 }
-                System.out.printf("The answer is: %d \n", result);
+                if(valid)
+                    System.out.printf("The answer is: %d \n", result);
             }
 
             equation.clear();
