@@ -18,17 +18,19 @@ public class Main {
         boolean quit = false;
 
         while (!quit) {
-            valid = true;
+            
             System.out.print("Enter equation to solve (or quit to close): ");
             String request = input.nextLine();
-            if (request.equalsIgnoreCase("quit"))
+            if (request.equalsIgnoreCase("quit")){
                 quit = true;
+                valid = false;
+            }
+                
             else {
                 result = Calculator(request);
             }
             if (valid)
                 System.out.printf("The answer is: %d \n", result);
-            equation.clear();
             result = -1;
         }
         input.close();
@@ -36,7 +38,7 @@ public class Main {
 
     public static int Calculator(String request) {
         int result = -1;
-
+        valid = true;
         request.strip();
         for (int i = 0; i < request.length(); i++) {
             char current = request.charAt(i);
@@ -87,10 +89,10 @@ public class Main {
                             : (result - Integer.parseInt(equation.get(j + 1))));
                 }
             }
-            if (valid)
-                System.out.printf("The answer is: %d \n", result);
         }
-
+        equation.clear();
         return result;
     }
+
+    public static boolean returnValid(){return valid;}
 }

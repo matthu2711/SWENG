@@ -3,15 +3,41 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d454b704-5cb1-480e-afb8-c974fa703d3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWENG.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SWENG.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,12 +51,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../SecondYear/First Term/Algorithms Assignment" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RunManager" selected="Application.main2m">
+    <configuration name="main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/Downloads/jdk-15_windows-x64_bin/jdk-15" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="SWENG" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main2m" type="Application" factoryName="Application">
+      <module name="SWENG" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.main" />
+      <item itemvalue="Application.main2m" />
+    </list>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,8 +91,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665424366952</updated>
+      <workItem from="1665591140479" duration="598000" />
+      <workItem from="1665657401517" duration="1466000" />
+      <workItem from="1665660040989" duration="35000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -52,5 +110,32 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2143" y="10" width="1089" height="832" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1665658994097">
+      <screen x="1920" y="10" width="1536" height="832" />
+    </state>
+    <state x="2143" y="10" width="1089" height="832" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.10.1536.832/0.0.1920.1040@1920.10.1536.832" timestamp="1665658994097" />
+    <state x="2418" y="224" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1665591492548">
+      <screen x="1920" y="10" width="1536" height="832" />
+    </state>
+    <state x="2418" y="224" key="#com.intellij.ide.util.TreeClassChooserDialog/1920.10.1536.832/0.0.1920.1040@1920.10.1536.832" timestamp="1665591492548" />
+    <state x="2368" y="158" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1665658007761">
+      <screen x="1920" y="10" width="1536" height="832" />
+    </state>
+    <state x="2368" y="158" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.10.1536.832/0.0.1920.1040@1920.10.1536.832" timestamp="1665658007761" />
+    <state x="2469" y="177" key="FileChooserDialogImpl" timestamp="1665660072443">
+      <screen x="1920" y="10" width="1536" height="832" />
+    </state>
+    <state x="2469" y="177" key="FileChooserDialogImpl/1920.10.1536.832/0.0.1920.1040@1920.10.1536.832" timestamp="1665660072443" />
+    <state x="2197" y="67" key="SettingsEditor" timestamp="1665658243424">
+      <screen x="1920" y="10" width="1536" height="832" />
+    </state>
+    <state x="2197" y="67" key="SettingsEditor/1920.10.1536.832/0.0.1920.1040@1920.10.1536.832" timestamp="1665658243424" />
+    <state x="2418" y="314" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1665591362540">
+      <screen x="1920" y="10" width="1536" height="832" />
+    </state>
+    <state x="2418" y="314" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/1920.10.1536.832/0.0.1920.1040@1920.10.1536.832" timestamp="1665591362540" />
   </component>
 </project>
