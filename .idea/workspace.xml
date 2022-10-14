@@ -23,9 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d454b704-5cb1-480e-afb8-c974fa703d3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SWENG.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SWENG.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +92,7 @@
       <workItem from="1665591140479" duration="598000" />
       <workItem from="1665657401517" duration="1466000" />
       <workItem from="1665660040989" duration="35000" />
+      <workItem from="1665750357801" duration="6000" />
     </task>
     <servers />
   </component>
