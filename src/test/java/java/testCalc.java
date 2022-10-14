@@ -1,21 +1,21 @@
 package java;
-import static org.junit.Assert.assertEquals;
+
 
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import main.java.Main;
+import static org.junit.Assert.assertEquals;
+ 
+import java.Main;
 
 import org.junit.Test;
-
-
 @RunWith(JUnit4.class)
 public class testCalc {
     
     @Test
     public void testBasicOps()
     {
-        assertEquals(10, Main.Calculator("8+2"));
+        assertEquals(10, Main.Calculator("1+2"));
         assertEquals(true, Main.returnValid());
         assertEquals(16, Main.Calculator("4*4"));
         assertEquals(true, Main.returnValid());
