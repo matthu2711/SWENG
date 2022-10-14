@@ -1,12 +1,16 @@
+package test.java;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import main.java.Main;
+
 import org.junit.Test;
 
 
 @RunWith(JUnit4.class)
-public class CalcUI {
+public class testCalc {
     
     @Test
     public void testBasicOps()
